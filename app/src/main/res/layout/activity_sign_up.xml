@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivities.SignUpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#ef6c00"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:id="@+id/signUpToolbar"
+        />
+
+    <EditText
+        android:layout_below="@id/signUpToolbar"
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:hint="Name:"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/etname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email:"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etmobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/etemail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Mobile No.:"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/etmobileNo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Address:"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/etaddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:maxLength="4"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/etcpassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:layout_below="@+id/etpassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Confirm Password"
+        android:padding="6dp" />
+    <Button
+        android:id="@+id/btregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/etcpassword"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>
